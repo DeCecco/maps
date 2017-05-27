@@ -7,6 +7,17 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { Camera } from '@ionic-native/camera';
+import {
+ GoogleMaps/*,
+ GoogleMap,
+ GoogleMapsEvent,
+ LatLng,
+ CameraPosition,
+ MarkerOptions,
+ Marker*/
+} from '@ionic-native/google-maps';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -34,6 +45,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    GoogleMaps,/*
+    GoogleMap,
+    GoogleMapsEvent,
+    LatLng,
+    CameraPosition,
+    MarkerOptions,
+    Marker,*/
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
